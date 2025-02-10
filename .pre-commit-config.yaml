@@ -1,0 +1,13 @@
+repos:
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.1.0  # Specify the version
+    hooks:
+      - id: flake8
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: Run Pytest
+        entry: pytest
+        language: system  # Use system Python
+        types: [python]
